@@ -1,15 +1,28 @@
 import { Form } from "react-router-dom";
+import { Button, TextField } from "@mui/material";
 
 export default function Login() {
 
     return (
-        <div>
-            <h1>Login Here</h1>
-            <div>
-                <Form action="login">
-                    <button type="submit">Submit</button>
-                </Form>
-            </div>
+        <div id="login-container" >
+            <h1>Login to UXI Health Portal</h1>
+            <Form action="../home">
+                <TextField
+                    type="email"
+                    label="Email"
+                    variant="outlined"
+                    required />
+                <TextField
+                    type="password"
+                    label="Password"
+                    variant="outlined"
+                    required />
+                {/* <button type="submit">Submit</button> */}
+                <Button
+                    type="submit"
+                    variant="contained"
+                >Submit</Button>
+            </Form>
         </div>
     )
 

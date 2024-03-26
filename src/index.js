@@ -12,6 +12,7 @@ import { createBrowserRouter, RouterProvider, redirect } from 'react-router-dom'
 import Root from "./routes/root"
 import ErrorPage from './routes/error';
 import Login from './routes/login';
+import Home from './routes/home';
 
 const router = createBrowserRouter([
   {
@@ -29,6 +30,10 @@ const router = createBrowserRouter([
       {
         path: "login",
         element: <Login />,
+      },
+      {
+        path: "home",
+        element: <Home />,
       }
     ]
   },
