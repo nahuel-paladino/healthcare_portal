@@ -8,16 +8,23 @@ import '@fontsource/roboto/400.css';
 import '@fontsource/roboto/500.css';
 import '@fontsource/roboto/700.css';
 
-import { createBrowserRouter, RouterProvider } from 'react-router-dom';
+import { createBrowserRouter, RouterProvider, redirect } from 'react-router-dom';
 import Root from "./routes/root"
 import ErrorPage from './routes/error';
 import Login from './routes/login';
 
 const router = createBrowserRouter([
   {
-    path: "/",
+    path: "/healthcare_portal",
     element: <Root />,
     errorElement: <ErrorPage />,
+    // default to login page for convenience
+    loader: async ({ request }) => {
+      if (!request.url.endsWith("/login")) {
+        return redirect("login")
+      }
+      return null;
+    },
     children: [
       {
         path: "login",
