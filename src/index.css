@@ -47,6 +47,10 @@ body {
   justify-content: space-between;
   padding: 1rem;
   background-color: var(--lightmode-2);
+  > img {
+    border: 1px solid var(--lightmode-3);
+    border-radius: 50%;
+  }
 }
 
 #content {
