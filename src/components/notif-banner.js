@@ -9,7 +9,7 @@ export default function NotificationBanner(props) {
                     University of Alberta, Alberta Health, and Alberta Health
                     Services. Please take the survey if you are 18 years and
                     older and have tested positive or negative for COVID-19 by
-                    a PCR or rapid test. Take the survey.</p>
+                    a PCR or rapid test. <a href="#">Take the survey</a>.</p>
             </div>
         </div>
     )
