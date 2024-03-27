@@ -8,7 +8,7 @@ export default function Login() {
             <h1>Login to UXI Health Portal</h1>
             <Form action="../home">
                 <TextField
-                    type="email"
+                    // type="email"
                     label="Email"
                     variant="outlined"
                     required />
@@ -17,7 +17,6 @@ export default function Login() {
                     label="Password"
                     variant="outlined"
                     required />
-                {/* <button type="submit">Submit</button> */}
                 <Button
                     type="submit"
                     variant="contained"
