@@ -70,6 +70,11 @@ export default function Records() {
                 "19/12/2022",
                 "Foothills General",
                 ""
+            ], [
+                "07/07/2014",
+                "10/07/2014",
+                "Alberta Children's Hospital",
+                ""
             ]
         ]
     }
@@ -162,7 +167,14 @@ export default function Records() {
             "Provider",
             "Notes"
         ],
-        rows: []
+        rows: [
+            [
+                "26/09/2023",
+                "Blood Glucose Test",
+                "DynaLIFE Medical Labs",
+                ""
+            ]
+        ]
     }
 
     return (
