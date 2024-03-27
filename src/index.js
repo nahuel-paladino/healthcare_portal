@@ -8,13 +8,14 @@ import '@fontsource/roboto/400.css';
 import '@fontsource/roboto/500.css';
 import '@fontsource/roboto/700.css';
 
-import { createBrowserRouter, Outlet, RouterProvider, redirect } from 'react-router-dom';
+import { createBrowserRouter, RouterProvider, redirect } from 'react-router-dom';
 import Root from "./routes/root"
 import ErrorPage from './routes/error';
 import Login from './routes/login';
 import Home from './routes/home';
 import Dashboard from './routes/dashboard';
 import MyHealth from './routes/my-health';
+import Records from './routes/records';
 
 const router = createBrowserRouter([
   {
@@ -47,24 +48,18 @@ const router = createBrowserRouter([
           },
           {
             path: "records",
-            element: <Outlet />,
+            element: <Records />,
+            loader: async ({ request }) => {
+              if (request.url.endsWith("/records")) {
+                return redirect("hospitalizations")
+              }
+              return null;
+            },
             children: [
-              {
-                path: "hospitalizations",
-                element: <div>Hospitalizations</div>
-              },
-              {
-                path: "special-visits",
-                element: <div>Special Visits</div>
-              },
-              {
-                path: "immunizations",
-                element: <div>Immunizations</div>
-              },
-              {
-                path: "test-results",
-                element: <div>Test Results</div>
-              },
+              { path: "hospitalizations" },
+              { path: "special-visits" },
+              { path: "immunizations" },
+              { path: "test-results" },
             ]
           },
           {

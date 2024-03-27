@@ -194,5 +194,38 @@ th, td {
 
 th {
   text-align: start;
-  color: var(--lightmode-5);
+  /* color: var(--lightmode-5); */
+}
+
+.react-tabs {
+  display: flex;
+  flex-flow: column nowrap;
+  height: 100%;
+  > .react-tabs__tab-panel {
+    flex-grow: 1;
+  }
+}
+
+.record-table {
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 1rem;
+  height: 100%;
+  padding: 1rem;
+  background-color: var(--lightmode-2);
+  border-radius: 7px;
+  > .interact-bar {
+    display: flex;
+    flex-flow: row nowrap;
+    gap: 1rem;
+    padding: 1rem;
+    background-color: var(--lightmode-1);
+    border-radius: 7px;
+    > .MuiTextField-root {
+      flex-grow: 1;
+    }
+  }
+  > Button {
+    margin: auto;
+  }
 }
