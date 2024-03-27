@@ -159,3 +159,40 @@ body {
     }
   }
 }
+
+#my-health-cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background-color: var(--lightmode-2);
+  border-radius: 7px;
+  flex-grow: 1;
+  padding: 1rem;
+  gap: 1rem;
+}
+
+.info-card {
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 1rem;
+  background-color: var(--lightmode-1);
+  border-radius: 7px;
+  padding: 1rem;
+  > .card-title {
+    margin: 0;
+    text-decoration: underline;
+  }
+}
+
+table, th, td {
+  border: 1px solid var(--lightmode-3);
+  border-collapse: collapse;
+}
+
+th, td {
+  padding: 0.5rem;
+}
+
+th {
+  text-align: start;
+  color: var(--lightmode-5);
+}

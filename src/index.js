@@ -14,6 +14,7 @@ import ErrorPage from './routes/error';
 import Login from './routes/login';
 import Home from './routes/home';
 import Dashboard from './routes/dashboard';
+import MyHealth from './routes/my-health';
 
 const router = createBrowserRouter([
   {
@@ -42,7 +43,7 @@ const router = createBrowserRouter([
           },
           {
             path: "my-health",
-            element: <Dashboard />,
+            element: <MyHealth />,
           },
           {
             path: "records",
