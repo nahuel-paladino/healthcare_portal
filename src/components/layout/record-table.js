@@ -1,7 +1,22 @@
+import { useEffect, useState } from "react";
+
 import TextField from "@mui/material/TextField"
 import Button from "@mui/material/Button"
 
 export default function RecordTable({ headers, rows }) {
+
+    const [search, setSearch] = useState("");
+    const [rowData, setRowData] = useState(rows);
+
+    function handleInput(e) {
+        setSearch(e.target.value);
+    }
+
+    useEffect(() => {
+        setRowData(rows.filter((row) => (
+            row.some((cell) => cell.toLowerCase().includes(search.toLowerCase()))
+        )))
+    }, [search])
 
     const createHeaders = () => {
         return (
@@ -15,7 +30,7 @@ export default function RecordTable({ headers, rows }) {
         )
     }
 
-    const createBody = () => {
+    const createBody = (rows) => {
         return (
             <tbody>
                 {rows.map((row) =>
@@ -33,15 +48,18 @@ export default function RecordTable({ headers, rows }) {
         <div className="record-table">
             <div className="interact-bar">
                 <TextField
+                    id="search"
                     label="Search Records"
                     variant="outlined"
+                    value={search}
+                    onChange={handleInput}
                 />
                 <Button variant="contained">Notification Setup</Button>
                 <Button variant="contained">Print</Button>
             </div>
             <table>
                 {createHeaders()}
-                {createBody()}
+                {createBody(rowData)}
             </table>
         </div>
     )
