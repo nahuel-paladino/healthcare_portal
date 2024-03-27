@@ -81,7 +81,7 @@ export default function Home() {
                             <ListItemIcon>
                                 <SettingsIcon />
                             </ListItemIcon>
-                            <ListItemText primary="Records" />
+                            <ListItemText primary="Settings" />
                         </ListItemButton>
                     </ListItem>
                 </List>
