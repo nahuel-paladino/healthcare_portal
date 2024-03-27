@@ -13,6 +13,7 @@ import Root from "./routes/root"
 import ErrorPage from './routes/error';
 import Login from './routes/login';
 import Home from './routes/home';
+import Dashboard from './routes/dashboard';
 
 const router = createBrowserRouter([
   {
@@ -21,7 +22,7 @@ const router = createBrowserRouter([
     errorElement: <ErrorPage />,
     // default to login page for convenience
     loader: async ({ request }) => {
-      if (!request.url.endsWith("/login")) {
+      if (request.url.endsWith("/healthcare_portal")) {
         return redirect("login")
       }
       return null;
@@ -32,8 +33,26 @@ const router = createBrowserRouter([
         element: <Login />,
       },
       {
-        path: "home",
+        path: "/healthcare_portal",
         element: <Home />,
+        children: [
+          {
+            path: "home",
+            element: <Dashboard />,
+          },
+          {
+            path: "my-health",
+            element: <Dashboard />,
+          },
+          {
+            path: "records",
+            element: <Dashboard />,
+          },
+          {
+            path: "settings",
+            element: <Dashboard />,
+          },
+        ]
       }
     ]
   },
