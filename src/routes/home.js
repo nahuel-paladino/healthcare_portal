@@ -21,6 +21,7 @@ export default function Home() {
 
     return (
         <div id="homepage">
+            {/* DASHBOARD */}
             <Drawer
                 variant="permanent"
                 sx={{
@@ -85,6 +86,7 @@ export default function Home() {
                     </ListItem>
                 </List>
             </Drawer>
+            {/* PAGE CONTENT */}
             <Outlet />
         </div>
     )
