@@ -8,7 +8,7 @@ import '@fontsource/roboto/400.css';
 import '@fontsource/roboto/500.css';
 import '@fontsource/roboto/700.css';
 
-import { createBrowserRouter, RouterProvider, redirect } from 'react-router-dom';
+import { createBrowserRouter, Outlet, RouterProvider, redirect } from 'react-router-dom';
 import Root from "./routes/root"
 import ErrorPage from './routes/error';
 import Login from './routes/login';
@@ -46,7 +46,25 @@ const router = createBrowserRouter([
           },
           {
             path: "records",
-            element: <Dashboard />,
+            element: <Outlet />,
+            children: [
+              {
+                path: "hospitalizations",
+                element: <div>Hospitalizations</div>
+              },
+              {
+                path: "special-visits",
+                element: <div>Special Visits</div>
+              },
+              {
+                path: "immunizations",
+                element: <div>Immunizations</div>
+              },
+              {
+                path: "test-results",
+                element: <div>Test Results</div>
+              },
+            ]
           },
           {
             path: "settings",

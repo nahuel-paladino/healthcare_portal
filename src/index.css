@@ -15,6 +15,7 @@
   --sidebar-width: 250px;
   --content-height: calc(100vh - var(--header-height) - var(--footer-height));
   --content-width: calc(100vw - var(--sidebar-width));
+  --quick-tile-height: 150px;
 }
 
 /* Accounts for border and padding when denoting size */
@@ -92,4 +93,69 @@ body {
   display: flex;
   height: 100%;
   width: 100%;
+}
+
+.page-content {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: stretch;
+  gap: 1rem;
+  padding: 2rem;
+  width: var(--content-width);
+}
+
+#notif-banner {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  align-items: center;
+  gap: 2rem;
+  padding: 1rem;
+  background-color: var(--lightmode-2);
+  border-radius: 7px;
+  > #notif-banner-title {
+    margin: auto;
+  }
+  > #notif-banner-info {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    gap: 1rem;
+    > h3 {
+      margin: 0;
+    }
+  }
+}
+
+#quick-access-container {
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 0.5rem;
+  padding: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 7px;
+  flex-grow: 1;
+  > button#edit-layout {
+    margin-left: auto;
+  }
+  > #quick-access-tiles {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    flex-grow: 1;
+    > .quick-tile {
+      display: grid;
+      grid-template-columns: 1fr 2fr;
+      align-items: center;
+      justify-content: center;
+      border-radius: 7px;
+      border: 1px solid var(--lightmode-2);
+      > svg {
+        margin: auto;
+      }
+    }
+    > .quick-tile:hover {
+      cursor: pointer;
+      background-color: var(--lightmode-2);
+    }
+  }
 }
