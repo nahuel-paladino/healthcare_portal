@@ -55,11 +55,12 @@ const router = createBrowserRouter([
               }
               return null;
             },
+            // added Fragments to avoid react-router warnings
             children: [
-              { path: "hospitalizations" },
-              { path: "special-visits" },
-              { path: "immunizations" },
-              { path: "test-results" },
+              { path: "hospitalizations", element: <></> },
+              { path: "special-visits", element: <></> },
+              { path: "immunizations", element: <></> },
+              { path: "test-results", element: <></> },
             ]
           },
           {
