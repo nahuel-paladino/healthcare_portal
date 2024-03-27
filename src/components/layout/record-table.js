@@ -43,7 +43,6 @@ export default function RecordTable({ headers, rows }) {
                 {createHeaders()}
                 {createBody()}
             </table>
-            {/* <Button variant="contained">Show More</Button> */}
         </div>
     )
 }

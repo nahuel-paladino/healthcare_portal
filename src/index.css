@@ -9,7 +9,6 @@
   --lightmode-4: #767676;
   --lightmode-5: #505050;
   /* Sizing */
-  /* --header-height-expanded: 250px; */
   --header-height: 125px;
   --footer-height: 125px;
   --sidebar-width: 250px;
@@ -194,7 +193,6 @@ th, td {
 
 th {
   text-align: start;
-  /* color: var(--lightmode-5); */
 }
 
 .react-tabs {
