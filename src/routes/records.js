@@ -35,7 +35,7 @@ export default function Records() {
             default:
                 setTabIndex(0);
         }
-    }, [])
+    }, [location])
 
     // ensure route reflects current tab
     function handleTabChange(index) {
