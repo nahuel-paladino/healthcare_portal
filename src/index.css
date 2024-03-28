@@ -74,7 +74,7 @@ body {
   padding: 2rem;
   border-radius: 7px;
   background-color: var(--lightmode-2);
-  > Form {
+  > form {
     display: flex;
     flex-flow: column nowrap;
     gap: 1rem;
@@ -226,7 +226,7 @@ th {
       flex-grow: 1;
     }
   }
-  > Button {
+  > button {
     margin: auto;
   }
 }
