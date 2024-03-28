@@ -29,14 +29,6 @@ export default function PatientCard() {
                         <th>Address</th>
                         <td>123 Street Ave NE, A1B 2C3</td>
                     </tr>
-                    <tr>
-                        <th>Immigrant Status</th>
-                        <td>Non-Immigrant</td>
-                    </tr>
-                    <tr>
-                        <th>Place of Birth</th>
-                        <td>Calgary, AB</td>
-                    </tr>
                 </tbody>
             </table>
         </InfoCard>
