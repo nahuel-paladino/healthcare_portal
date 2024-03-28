@@ -2,6 +2,7 @@ import { useNavigate } from "react-router-dom";
 
 import Button from "@mui/material/Button";
 import LocalHospitalIcon from '@mui/icons-material/LocalHospital';
+import MedicalServicesIcon from '@mui/icons-material/MedicalServices';
 import VaccinesIcon from '@mui/icons-material/Vaccines';
 import BiotechIcon from '@mui/icons-material/Biotech';
 import Diversity1Icon from '@mui/icons-material/Diversity1';
@@ -19,7 +20,7 @@ export default function QuickTiles() {
         },
         {
             title: "Special Visits",
-            icon: <LocalHospitalIcon sx={{ fontSize: 80 }} />,
+            icon: <MedicalServicesIcon sx={{ fontSize: 80 }} />,
             path: "/healthcare_portal/records/special-visits"
         },
         {
