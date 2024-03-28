@@ -43,7 +43,7 @@ export default function Header() {
                             onClick={() => handleNav("/healthcare_portal/settings")}
                         >Settings</MenuItem>
                         <MenuItem
-                            onClick={() => handleNav("/healthcare_portal/login")}
+                            onClick={() => handleNav("/login")}
                         >Logout</MenuItem>
                     </Menu>
                 </>

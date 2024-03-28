@@ -20,7 +20,7 @@ import Settings from './routes/settings';
 
 const router = createBrowserRouter([
   {
-    path: "/healthcare_portal",
+    path: "/",
     element: <Root />,
     errorElement: <ErrorPage />,
     // default to login page for convenience

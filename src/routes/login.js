@@ -6,7 +6,7 @@ export default function Login() {
     return (
         <div id="login-container" >
             <h1>Login to UXI Health Portal</h1>
-            <Form action="../home">
+            <Form action="/healthcare_portal/home">
                 <TextField
                     // type="email"
                     label="Email"
