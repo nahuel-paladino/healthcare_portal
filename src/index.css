@@ -230,3 +230,16 @@ th {
     margin: auto;
   }
 }
+
+.settings-section {
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 1rem;
+  background-color: var(--lightmode-2);
+  border-radius: 7px;
+  padding: 1rem;
+  > button {
+    margin-top: auto;
+    margin-left: auto;
+  }
+}

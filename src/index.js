@@ -16,6 +16,7 @@ import Home from './routes/home';
 import Dashboard from './routes/dashboard';
 import MyHealth from './routes/my-health';
 import Records from './routes/records';
+import Settings from './routes/settings';
 
 const router = createBrowserRouter([
   {
@@ -65,7 +66,7 @@ const router = createBrowserRouter([
           },
           {
             path: "settings",
-            element: <Dashboard />,
+            element: <Settings />,
           },
         ]
       }
