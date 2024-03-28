@@ -12,6 +12,10 @@ export default function RecordTable({ headers, rows }) {
         setSearch(e.target.value);
     }
 
+    function handlePrint() {
+        window.print();
+    }
+
     useEffect(() => {
         setRowData(rows.filter((row) => (
             row.some((cell) => cell.toLowerCase().includes(search.toLowerCase()))
@@ -55,7 +59,7 @@ export default function RecordTable({ headers, rows }) {
                     onChange={handleInput}
                 />
                 <Button variant="contained">Notification Setup</Button>
-                <Button variant="contained">Print</Button>
+                <Button variant="contained" onClick={handlePrint}>Print</Button>
             </div>
             <table>
                 {createHeaders()}
