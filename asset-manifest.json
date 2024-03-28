@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/healthcare_portal/static/css/main.2dab08eb.css",
-    "main.js": "/healthcare_portal/static/js/main.720ae24c.js",
-    "static/js/453.64a7ee09.chunk.js": "/healthcare_portal/static/js/453.64a7ee09.chunk.js",
+    "main.css": "/healthcare_portal/static/css/main.e85dce33.css",
+    "main.js": "/healthcare_portal/static/js/main.51243778.js",
+    "static/js/453.0bad99fb.chunk.js": "/healthcare_portal/static/js/453.0bad99fb.chunk.js",
     "static/media/roboto-latin-500-normal.woff2": "/healthcare_portal/static/media/roboto-latin-500-normal.f25d774ecfe0996f8eb5.woff2",
     "static/media/roboto-latin-700-normal.woff2": "/healthcare_portal/static/media/roboto-latin-700-normal.227c93190fe7f82de3f8.woff2",
     "static/media/roboto-latin-400-normal.woff2": "/healthcare_portal/static/media/roboto-latin-400-normal.b009a76ad6afe4ebd301.woff2",
@@ -60,12 +60,12 @@
     "static/media/roboto-greek-ext-400-normal.woff": "/healthcare_portal/static/media/roboto-greek-ext-400-normal.f708607d2a7290fb8bfa.woff",
     "static/media/roboto-greek-ext-700-normal.woff": "/healthcare_portal/static/media/roboto-greek-ext-700-normal.249853776d22a271b2b5.woff",
     "index.html": "/healthcare_portal/index.html",
-    "main.2dab08eb.css.map": "/healthcare_portal/static/css/main.2dab08eb.css.map",
-    "main.720ae24c.js.map": "/healthcare_portal/static/js/main.720ae24c.js.map",
-    "453.64a7ee09.chunk.js.map": "/healthcare_portal/static/js/453.64a7ee09.chunk.js.map"
+    "main.e85dce33.css.map": "/healthcare_portal/static/css/main.e85dce33.css.map",
+    "main.51243778.js.map": "/healthcare_portal/static/js/main.51243778.js.map",
+    "453.0bad99fb.chunk.js.map": "/healthcare_portal/static/js/453.0bad99fb.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.2dab08eb.css",
-    "static/js/main.720ae24c.js"
+    "static/css/main.e85dce33.css",
+    "static/js/main.51243778.js"
   ]
 }
