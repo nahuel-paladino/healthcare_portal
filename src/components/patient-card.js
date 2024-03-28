@@ -10,7 +10,7 @@ export default function PatientCard() {
                         <td>Jane Doe</td>
                     </tr>
                     <tr>
-                        <th>Gender</th>
+                        <th>Pronouns</th>
                         <td>She/Her</td>
                     </tr>
                     <tr>
